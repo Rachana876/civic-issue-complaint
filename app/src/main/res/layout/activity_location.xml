@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".LocationActivity">
+
+
+
+
+    <Button
+        android:id="@+id/buttonGetCurrentLocation"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/get_live_location"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+
+        />
+
+
+    <TextView
+        android:id="@+id/textLatLong"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/buttonGetCurrentLocation"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-92dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textAddress"
+        android:layout_width="375dp"
+        android:layout_height="230dp"
+        android:layout_below="@+id/textLatLong"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="663dp"
+        android:fontFamily="@font/aclonica"
+        android:textSize="18sp"
+        android:text="@string/confirm_address" />
+
+    <EditText
+        android:id="@+id/addressop"
+        android:layout_width="339dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textAddress"
+        android:layout_centerInParent="true"
+        android:hint="@string/enter_address_if_not_live"
+        android:textAlignment="center"
+        style="@style/Widget.AppCompat.EditText"
+        android:background="@android:color/white"/>
+
+</RelativeLayout>
